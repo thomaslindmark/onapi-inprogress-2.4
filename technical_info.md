@@ -409,12 +409,16 @@ Content-Type: application/json
     {
       "mac": "xx:xx:xx:xx:xx:xx",
       "serviceType": "bb",
-      "port": 1
+      "ports": [ 1 ]
     },
     {
       "mac": "xx:xx:xx:xx:xx:xx",
       "serviceType": "iptv",
-      "port": 2
+      "ports": [ 2 ]
+    },
+    {
+      "mac": "33:33:00:00:00:01",
+      "ports": [ 0,1,2,3,4,5 ]
     }
   ],
   "dhcpSnooping": [
@@ -469,7 +473,7 @@ Content-Type: application/json
 | macAddressTable                               |list               | List of mac address objects                      |
 | macAddressTable.#.mac                         |string             | Mac address of device                            |
 | macAddressTable.#.serviceType                     |string             | Which network service the mac originates from    |
-| macAddressTable.#.port                        |string             | Which CPE port index the mac originates from     |
+| macAddressTable.#.ports                       | list              | Which CPE port indexes the mac switch to     m   |
 | dhcpSnooping                                  |list               | List of dhcp snooping objects                    |
 | dhcpSnooping.#.ip                             |string             | IP lease                                         |
 | dhcpSnooping.#.mac                            |string             | Mac address of device                            |
