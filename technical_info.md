@@ -460,6 +460,10 @@ Content-Type: application/json
 | ports.#.fiber.dbmRx                           | string            | Fiber receive dampening                          |
 | ports.#.fiber.dbmTx                           | string            | Fiber transceiver dampening                       |
 | ports.#.fiber.temp                            | string            | SFP temperature                                  |
+| ports.#.fiber.biasTx                          | string            | SFP TX bias current                              |
+| ports.#.fiber.vendor                          | string            | SFP Vendor                                       |
+| ports.#.fiber.partNumber                      | string            | SFP Part Number                                  |
+| ports.#.fiber.serialNumber                    | string            | SFP Serial Number                                |
 | ports.#.statistics.input.errors               | integer           | Ingress count of errors                          |
 | ports.#.statistics.input.crcErrors            | integer           | Ingress count of crc errors                      |
 | ports.#.statistics.input.bytes                | integer           | Ingress count of bytes                           |
