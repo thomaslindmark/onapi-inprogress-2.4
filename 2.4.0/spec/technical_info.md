@@ -461,6 +461,7 @@ Content-Type: application/json
 | ports.#.fiber.dbmTx                           | string            | Fiber transceiver dampening                       |
 | ports.#.fiber.temp                            | string            | SFP temperature                                  |
 | ports.#.fiber.biasTx                          | string            | SFP TX bias current                              |
+| ports.#.fiber.supplyVoltage                   | string            | SFP Supply voltage                               |
 | ports.#.fiber.vendor                          | string            | SFP Vendor                                       |
 | ports.#.fiber.partNumber                      | string            | SFP Part Number                                  |
 | ports.#.fiber.serialNumber                    | string            | SFP Serial Number                                |
